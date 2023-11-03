@@ -1,4 +1,6 @@
 #creating and indexing lists
+#lists start at 0. One option is to put a NA in the first slot so the indexs are more intuitive.
+#If you do this make sure to leave a comment!
 bikes = ['trek', 'cannondale', 'redline', 'specialized']
 print(bikes)
 print(bikes[0])
