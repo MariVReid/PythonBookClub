@@ -63,6 +63,7 @@ while number<10:
 # and an empty list to hold confirmed users.
 unconfirmed_users = ['alice', 'brian', 'candace']
 confirmed_users = []
+
 # Verify each user until there are no more unconfirmed users.
 # Move each verified user into the list of confirmed users.
 while unconfirmed_users:
@@ -72,10 +73,20 @@ while unconfirmed_users:
 #Display all confirmed users.
 print("\nThe following users have been confirmed:")
 for confirmed_user in confirmed_users:
-print(confirmed_user.title())
+	print(f"{confirmed_user.title()}")
 
 pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
 print(pets)
 while 'cat' in pets:
 	pets.remove('cat')
 print(pets)
+
+## Homework: write a program to identify and print the first 100 prime numbers, using the % function
+## "1" is NOT a prime number
+## NO homework for reading chapter 8, first meeting back will be share this problem and discuss meeting 2nd semester
+
+## Printable Askii characters
+growing_string = ""
+for number in range(32, 127):
+	growing_string = growing_string + chr(number)
+print(f"{growing_string}\n")
